@@ -44,6 +44,11 @@ function App() {
 				alert(response.razorpay_order_id);
 				alert(response.razorpay_signature);
 			},
+			prefill: {
+				name: "",
+				email: "sdsdsdsds@gmail.com",
+				phone: "7878787878",
+			},
 		};
 		var paymentObject = new window.Razorpay(options);
 		paymentObject.open();
